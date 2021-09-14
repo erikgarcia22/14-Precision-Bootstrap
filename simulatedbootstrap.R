@@ -19,7 +19,7 @@ library(renv)
 
 set.seed(123) # reproducible simulations
 
-# Create a dataset
+# Create a data set
 
   myd<- tibble(
     rat = rep(c("rat1", "rat2", "rat3", "rat4", "rat5"), 15),
