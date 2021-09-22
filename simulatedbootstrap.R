@@ -65,7 +65,7 @@ set.seed(123) # reproducible simulations
   
   int_pctl(boot_stats, inf_mean)
 
-# Visualize data
+# Visualize data- Means
   
   infusion_means <- boot_stats %>% 
     unnest(inf_mean)
@@ -74,4 +74,14 @@ set.seed(123) # reproducible simulations
     select(estimate) %>% 
     ggplot(aes(estimate))+
     geom_histogram()
-    
+ 
+# Visualize data - Median
+  
+  infusion_median <- boot_stats %>% 
+    unnest(inf_median)
+  
+  infusion_median %>% 
+    select(estimate) %>% 
+    ggplot(aes(estimate))+
+    geom_histogram()
+  
