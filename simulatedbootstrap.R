@@ -3,7 +3,7 @@
 # Date: 20210602
 
  
-# Introduction
+# Introduction----
 # This script is me learning how to do these analyses for this reason
 # There is a call for individual level or precision medicine.
 # However, there isn't a robust, reliable way to understand significant
@@ -19,7 +19,7 @@ library(renv)
 
 set.seed(123) # reproducible simulations
 
-# Create a data set
+# Create a data set----
 
   myd<- tibble(
     rat = rep(c("rat1", "rat2", "rat3", "rat4", "rat5"), 15),
